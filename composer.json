@@ -2,7 +2,12 @@
     "name": "orchestra/model",
     "description": "Model Component for Orchestra Platform",
     "homepage": "http://orchestraplatform.com/docs/latest/components/model",
-    "keywords": ["orchestra-platform", "orchestral", "model", "laravel"],
+    "keywords": [
+        "orchestra-platform",
+        "orchestral",
+        "model",
+        "laravel"
+    ],
     "license": "MIT",
     "authors": [
         {
@@ -13,33 +18,47 @@
     ],
     "autoload": {
         "psr-4": {
-            "Orchestra\\Model\\" : "src/"
+            "Orchestra\\Model\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Orchestra\\Model\\Tests\\" : "tests/"
+            "Orchestra\\Model\\Tests\\": "tests/"
         }
     },
     "require": {
-        "php": "^7.3 || ^8.0",
-        "laravie/dhosa": "^1.1",
-        "orchestra/contracts": "^6.0",
-        "orchestra/database": "^6.0",
-        "orchestra/support": "^6.0"
+        "php": "^8.0",
+        "laravie/dhosa": "2.x-dev",
+        "orchestra/contracts": "^7.0",
+        "orchestra/database": "7.x-dev",
+        "orchestra/support": "^7.0"
     },
     "require-dev": {
-        "orchestra/auth": "^6.0",
-        "orchestra/memory": "^6.0",
-        "orchestra/testbench": "^6.17"
+        "orchestra/auth": "7.x-dev",
+        "orchestra/memory": "^7.0",
+        "orchestra/testbench": "^7.0"
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "6.0-dev"
+            "dev-master": "7.0-dev"
         }
     },
     "config": {
         "sort-packages": true
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/katsana-external/auth"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/katsana-external/dhosa"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/katsana-external/database"
+        }
+    ]
 }
