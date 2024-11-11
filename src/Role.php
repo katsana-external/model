@@ -45,9 +45,9 @@ class Role extends Eloquent
     /**
      * Set default roles.
      */
-    public static function setDefaultRoles(array $roles): void
+    public static function setDefaultRoles(array|null $roles): void
     {
-        static::$defaultRoles = array_merge(static::$defaultRoles, $roles);
+        static::$defaultRoles = array_merge(static::$defaultRoles, $roles ?? []);
     }
 
     /**
