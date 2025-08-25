@@ -27,20 +27,20 @@
         }
     },
     "require": {
-        "php": "^8.0",
+        "php": "^8.2",
         "laravie/dhosa": "2.x-dev",
-        "orchestra/contracts": "^7.0",
-        "orchestra/database": "7.x-dev",
-        "orchestra/support": "^7.0"
+        "orchestra/contracts": "^8.0",
+        "orchestra/database": "8.x-dev",
+        "orchestra/support": "^8.0"
     },
     "require-dev": {
-        "orchestra/auth": "7.x-dev",
-        "orchestra/memory": "^7.0",
-        "orchestra/testbench": "^7.0"
+        "orchestra/auth": "8.x-dev",
+        "orchestra/memory": "^8.0",
+        "orchestra/testbench": "^8.0"
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "7.0-dev"
+            "dev-master": "8.0-dev"
         }
     },
     "config": {
