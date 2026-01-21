@@ -2,7 +2,12 @@
     "name": "orchestra/model",
     "description": "Model Component for Orchestra Platform",
     "homepage": "http://orchestraplatform.com/docs/latest/components/model",
-    "keywords": ["orchestra-platform", "orchestral", "model", "laravel"],
+    "keywords": [
+        "orchestra-platform",
+        "orchestral",
+        "model",
+        "laravel"
+    ],
     "license": "MIT",
     "authors": [
         {
@@ -13,20 +18,20 @@
     ],
     "autoload": {
         "psr-4": {
-            "Orchestra\\Model\\" : "src/"
+            "Orchestra\\Model\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Orchestra\\Model\\Tests\\" : "tests/"
+            "Orchestra\\Model\\Tests\\": "tests/"
         }
     },
     "require": {
         "php": "^7.3 || ^8.0",
-        "laravie/dhosa": "^1.1",
-        "orchestra/contracts": "^6.0",
-        "orchestra/database": "^6.0",
-        "orchestra/support": "^6.0"
+        "laravie/dhosa": "*",
+        "orchestra/contracts": "*",
+        "orchestra/database": "*",
+        "orchestra/support": "*"
     },
     "require-dev": {
         "orchestra/auth": "^6.0",
