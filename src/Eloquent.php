@@ -15,7 +15,7 @@ abstract class Eloquent extends Model implements Transformable
     /**
      * Get qualified column name.
      */
-    public static function column(string $column): string
+    public static function column(string $column): string|Expression
     {
         return new Expression(
             (new static())->qualifyColumn($column)
